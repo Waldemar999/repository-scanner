@@ -48,7 +48,6 @@ export default class {
 			return data;
 		} catch (error) {
 			handleError(error, 'Get repository tree SHA error');
-
 		}
 	}
 

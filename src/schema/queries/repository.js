@@ -57,7 +57,7 @@ export default {
 		},
 		ymlPath: {
 			type: new GraphQLNonNull(GraphQLString),
-		}
+		},
 	},
 	resolve: async (_, { name: repoName, ymlPath }, context) => {
 		const [
@@ -85,6 +85,6 @@ export default {
 			fileCount,
 			yml: ymlContent,
 			activeWebhooks,
-		}
+		};
 	},
 };

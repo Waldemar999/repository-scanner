@@ -22,7 +22,7 @@ const repositoryListType = new GraphQLObjectType({
 					size: {
 						type: new GraphQLNonNull(GraphQLFloat),
 						description: 'Repository size',
-						resolve: ({ size }) => size
+						resolve: ({ size }) => size,
 					},
 					owner: {
 						type: new GraphQLNonNull(GraphQLString),

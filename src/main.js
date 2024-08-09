@@ -19,7 +19,7 @@ class RepositoryScanner {
 
 		app.use(graphqlRouter);
 
-		app.listen(SERVER_PORT, async () => {
+		app.listen(SERVER_PORT, () => {
 			console.log(`Server started at http://localhost:${SERVER_PORT}`);
 		});
 	}
